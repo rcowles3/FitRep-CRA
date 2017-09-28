@@ -19,8 +19,8 @@ class CardDeck extends Component {
                 <div className="card">
                     <img className="card-img-top mx-auto" src={workoutIcon} alt="Card image cap" />
                     <div className="card-body">
-                        <h4 className="card-title">Browse Workouts</h4>
-                        <p className="card-text">Whether you are just getting started on your fitness journey, or looking for a challenge, we have the perfect workout for you.</p>
+                        <h4 className="card-title">Choose Your Workout</h4>
+                        <p className="card-text">Whether you are just getting started on your fitness journey, or looking for a challenge, choose one that fits your goals.</p>
                     </div>
                 </div>
                 <div className="card">

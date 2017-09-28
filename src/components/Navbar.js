@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import headerLogo from '../imgs/iLIFT Fitness Camp Logo (1).png';
+import Login from './Login';
 
 class Navbar extends Component {
 
@@ -14,15 +15,7 @@ class Navbar extends Component {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <ul className="navbar-nav ml-auto">
-                        <li className="nav-item active">
-                            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/create-account">Sign Up</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/login">Login</a>
-                        </li>
+                        <Login />                        
                     </ul>
                 </div>
             </nav>

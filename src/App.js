@@ -9,6 +9,7 @@ import HeaderImg from './components/HeaderImg';
 import CardDeck from './components/CardDeck';
 import GetStarted from './components/GetStarted';
 import Footer from './components/Footer';
+// import ContactForm from './components/ContactForm';
 
 import './App.css';
 
@@ -20,6 +21,7 @@ class App extends Component {
         <HeaderImg />
         <CardDeck />
         <GetStarted />
+        {/* <ContactForm /> */}
         <Footer />
       </div>
     );
