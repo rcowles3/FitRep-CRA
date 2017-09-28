@@ -1,28 +1,102 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    text-align: center;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    background-color: #fff;
+    padding-top: 550px;
+    padding: 20px;
+    color: #000;
 }
 
-.App-title {
-  font-size: 1.5em;
+#headerImg {
+    width: 100%;
+    height: 600px;
+    background: url('./imgs/newHeaderLogo.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#getStarted {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./imgs/getStarted.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    ;
+    color: white;
+    margin-bottom: 0px;
+    padding-bottom: 400px;
+    width: 100%;
+    height: 400px;
+}
+
+
+/* 
+    Footer CSS
+    ================================================== 
+
+*/
+
+footer {
+    background-color: #343a40!important;
+    color: #000;
+    margin: 0px 0px;
+    padding: 5px 5px;
+}
+
+#moreInfoFooter,
+#quickLinksFooter {
+    padding-top: 100px;
+}
+
+
+/* ================================================== */
+
+.card {
+    background: none;
+    border: none;
+}
+
+body {
+    background-color: #EBEBEB
+}
+
+.card-img-top {
+    width: 128px;
+    height: 128px;
+    /* margin-left: 33%; */
+    /* margin-right: 33%; */
+}
+
+.card-deck {
+    margin: 55px 15px 55px 15px;
+}
+
+.navbar-brand {
+    padding-top: 0px;
+    height: 120px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    background-color: #272727
+}
+
+
+/* .App-logo {
+    display: inline;
 }
 
 .App-intro {
-  font-size: large;
-}
+    font-size: large;
+} */
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.btn,
+.btn-primary {
+    width: 200px;
+    margin: 5px;
+    background-color: darkorange;
 }

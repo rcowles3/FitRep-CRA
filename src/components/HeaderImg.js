@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import headerImg from '../imgs/sports-fitness-body-building-iron-161557 (2).jpeg'
+import headerImg from '../imgs/newHeaderLogo.png';
 
 class HeaderImg extends Component {
 
     render() {
         return (
-            <div class="jumbotron">
-                <img src={headerImg} id="headerImg" alt="FitRep Header Image" />
+            <div id="headerImg" className="jumbotron jumbotron-fluid">
+                {/* <img src={headerImg} id="headerImg" alt="FitRep Header Image" /> */}
             </div>
         );
     }
