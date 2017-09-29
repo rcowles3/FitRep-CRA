@@ -47,7 +47,7 @@ class Login extends Component {
 
         // let first_name = this.state.firstName;
         event.preventDefault();
-        // this.userData.authData(loginInfo);
+        this.userData.authData(loginInfo);
         // console.log("Account Login Successful!");
 
         // let user_name =this.state.username;

@@ -45,6 +45,11 @@ class SignUp extends Component {
             pass_word: this.state.password
         };
 
+
+        // fetch('/users/create')
+        //     .then(console.log('complete'));
+
+
         // let first_name = this.state.firstName;
         event.preventDefault();
         this.userData.sendData(createAccount);

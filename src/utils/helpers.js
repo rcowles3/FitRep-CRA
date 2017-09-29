@@ -13,6 +13,11 @@ class helpers {
 
     authData(loginInfo) {
         console.log("Login Auth: ", loginInfo);
+        axios.post('http://localhost:4200/users/authenticate', {
+            loginInfo: loginInfo
+        })
+            .then(res => this.setState({ loginInfo: res.data }))
+                .catch(err => console.log(err));
 
     }
 
