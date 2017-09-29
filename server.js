@@ -5,6 +5,7 @@ var cheerio = require("cheerio");
 var request = require("request");
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
+var cors = require("cors");
 //include my models with database schema
 var BackToBasics = require("./models/BackToBasics");
 var MaxedOutMuscle = require("./models/MaxedOutMuscle");
@@ -80,6 +81,18 @@ app.get("/maxed", function(req, res){
    });
     
  });
+
+// Use middlewares to set view engine and post json data to the server
+app.use(cors());
+app.use(express.static("public"));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+// Route Handlers
+// const dataScrape = require("./routes/dataScrape");
+const userRoutes = require("./routes/userRoutes");
+// app.use("/api", dataScrape);
+app.use("/users", userRoutes);
 
 
 //----------------------------------------------------------------

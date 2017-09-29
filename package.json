@@ -1,25 +1,27 @@
 {
-  "name": "fitrep",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "axios": "^0.16.2",
-    "body-parser": "^1.18.2",
-    "cheerio": "^1.0.0-rc.2",
-    "express": "^4.16.0",
-    "mongojs": "^2.4.1",
-    "mongoose": "^4.11.13",
-    "react": "^16.0.0",
-    "react-bootstrap": "^0.31.3",
-    "react-dom": "^16.0.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.14",
-    "request": "^2.83.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "name": "fitrep",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "axios": "^0.16.2",
+        "body-parser": "^1.18.2",
+        "cheerio": "^1.0.0-rc.2",
+        "cors": "^2.8.4",
+        "express": "^4.16.0",
+        "mongojs": "^2.4.1",
+        "mongoose": "^4.11.13",
+        "react": "^16.0.0",
+        "react-bootstrap": "^0.31.3",
+        "react-dom": "^16.0.0",
+        "react-router-dom": "^4.2.2",
+        "react-scripts": "1.0.14",
+        "request": "^2.83.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    },
+    "proxy": "http://localhost:4200"
 }
