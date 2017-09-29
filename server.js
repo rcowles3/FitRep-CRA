@@ -38,8 +38,8 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 //Database configuration with mongoose
-const localDeploy = "mongodb://localhost:27017/FitRep";
-const herokuDeploy = 'mongodb://heroku_qls9xw3z:9kclrucuf2af6stvk0engod2s0@ds157584.mlab.com:57584/heroku_qls9xw3z';
+var localDeploy = "mongodb://localhost:27017/FitRep";
+var herokuDeploy = 'mongodb://heroku_qls9xw3z:9kclrucuf2af6stvk0engod2s0@ds157584.mlab.com:57584/heroku_qls9xw3z';
 
 //mongoose.connect
 mongoose.connect(herokuDeploy,
