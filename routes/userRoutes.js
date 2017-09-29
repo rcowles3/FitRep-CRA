@@ -44,7 +44,7 @@ userRouter.route("/authenticate").post((req, res) => {
     auth = (err, info, doc) => {
         if (err) throw err;
         console.log("\n\n\nReturned data from DB", info);  
-        res.redirect('http://localhost:3000');
+        res.json(info);
     }
 
     CreateUser.

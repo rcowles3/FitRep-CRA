@@ -89,9 +89,9 @@ app.get("/maxed", function(req, res){
  });
 
 // Route Handlers
-// const dataScrape = require("./routes/dataScrape");
+const dataScrape = require("./routes/dataScrape");
 const userRoutes = require("./routes/userRoutes");
-// app.use("/api", dataScrape);
+app.use("/api", dataScrape);
 app.use("/users", userRoutes);
 
 
