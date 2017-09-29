@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import headerLogo from '../imgs/iLIFT Fitness Camp Logo (1).png';
-import then from '../../.react-backend/node_modules/es6-promise/lib/es6-promise/then'
 
 class Footer extends Component {
 
