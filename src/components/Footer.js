@@ -15,24 +15,24 @@ class Footer extends Component {
                     </div>
                     <div className="card text-left" id="moreInfoFooter">
                         <div>
-                            <h5 class="card-title">Follow Us On Github</h5>
+                            <h5 className="card-title">Follow Us On Github</h5>
                         </div>
                         <br />
                         <br />
                         <div>
-                            <h5 class="card-title">Get In Touch With Us</h5>
+                            <h5 className="card-title">Get In Touch With Us</h5>
                         </div>
                     </div>
                     <div className="card text-left" id="quickLinksFooter">
                         <div>
-                            <h5 class="card-title">Quicklinks</h5>
+                            <h5 className="card-title">Quicklinks</h5>
                             <a className="nav-link" href="/create-account">Sign Up</a>
                             <a className="nav-link" href="/login">Login</a>
                         </div>
                         <br />
                         <br />
                         <div>
-                            <h5 class="card-title">API</h5>
+                            <h5 className="card-title">API</h5>
                             <a className="nav-link" href="http://localhost:4200/api/workout-data/back-to-basics">Back To Basics</a>
                             <a className="nav-link" href="http://localhost:4200/api/workout-data/maxed-out-muscle">Maxed Out Muscle</a>
                         </div>

@@ -31,37 +31,39 @@ app.use(bodyParser.json());
 // Set up a static folder (public) for our web app
 app.use(express.static("public"));
 
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 //Database configuration with mongoose
-//mongoose.connect("mongodb://heroku_fpl41ksr:pqc91djlcafhpjj9m4rr5g34ih@ds121674.mlab.com:21674/heroku_fpl41ksr",
-mongoose.connect("mongodb://localhost:27017/FitRep",
-{
-  useMongoClient: true
-});
+let localDeploy = "mongodb://localhost:27017/FitRep";
+let herokuDeploy = 'mongodb://heroku_qls9xw3z:9kclrucuf2af6stvk0engod2s0@ds157584.mlab.com:57584/heroku_qls9xw3z';
+
+//mongoose.connect
+mongoose.connect(herokuDeploy,
+  {
+    useMongoClient: true
+  });
 const db = mongoose.connection;
 
-
 //Show any mongoose errors
-db.on("error", function(error){
+db.on("error", function (error) {
   console.log("Mongoose Error: ", error);
 });
 
 //Log success message once logged into mongoose
-db.once("open", function(){
+db.once("open", function () {
   console.log("Mongoose connection successful.");
 });
 
 //get all data from back to basics in local db
-app.get("/b2b", function(req, res){
-   // console.log("what is in my request? ", req);
-   BackToBasics.find({}).sort([
+app.get("/b2b", function (req, res) {
+  // console.log("what is in my request? ", req);
+  BackToBasics.find({}).sort([
     ["_id", "descending"]
-  ]).limit(5).exec(function(err, doc) {
+  ]).limit(5).exec(function (err, doc) {
     if (err) {
       console.log(err);
     }
@@ -69,24 +71,24 @@ app.get("/b2b", function(req, res){
       res.send(doc);
     }
   });
-   
+
 });
 
 //get all data from back to basics in local db
-app.get("/maxed", function(req, res){
-    // console.log("what is in my request? ", req);
-    MaxedOutMuscle.find({}).sort([
-     ["_id", "descending"]
-   ]).limit(5).exec(function(err, doc) {
-     if (err) {
-       console.log(err);
-     }
-     else {
-       res.send(doc);
-     }
-   });
-    
- });
+app.get("/maxed", function (req, res) {
+  // console.log("what is in my request? ", req);
+  MaxedOutMuscle.find({}).sort([
+    ["_id", "descending"]
+  ]).limit(5).exec(function (err, doc) {
+    if (err) {
+      console.log(err);
+    }
+    else {
+      res.send(doc);
+    }
+  });
+
+});
 
 // Route Handlers
 const dataScrape = require("./routes/dataScrape");
@@ -98,5 +100,5 @@ app.use("/users", userRoutes);
 //----------------------------------------------------------------
 // Listener
 app.listen(PORT, function () {
-    console.log('Server is running on Port: ', PORT);
-  });
+  console.log('Server is running on Port: ', PORT);
+});
