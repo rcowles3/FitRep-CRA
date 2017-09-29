@@ -21,6 +21,12 @@ var PORT = process.env.PORT || 4200;
 // Initialize Express
 var app = express();
 
+// Use middlewares to set view engine and post json data to the server
+app.options('*', cors()); // include before other routes
+app.use(cors());
+app.use(express.static("public"));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 // Set up a static folder (public) for our web app
 app.use(express.static("public"));
@@ -81,12 +87,6 @@ app.get("/maxed", function(req, res){
    });
     
  });
-
-// Use middlewares to set view engine and post json data to the server
-app.use(cors());
-app.use(express.static("public"));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
 
 // Route Handlers
 // const dataScrape = require("./routes/dataScrape");
