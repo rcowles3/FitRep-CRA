@@ -10,7 +10,7 @@ import App from './App';
 import Login from './components/Login';
 import TableRow from './components/TableRow';
 import SignUp from './components/SignUp'
-// import BacktoBasics from './components/BacktoBasics';
+import BacktoBasics from './components/BacktoBasics';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<Router>
@@ -22,7 +22,7 @@ ReactDOM.render(<Router>
         <Route path='/create-account' component={SignUp} />
         <Route path='/login' component={Login} />
         <Route path='/table' component={TableRow} />
-        {/* <Route path='/back2basics' component={BacktoBasics} /> */}
+        <Route path='/back2basics' component={BacktoBasics} />
     </div>
 </Router>, document.getElementById('root'));
 registerServiceWorker();

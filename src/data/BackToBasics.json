@@ -1,0 +1,57 @@
+{"_id":{"$oid":"59c32d7c025f6e72d388d5ac"},"workoutWeek":"Week 1 ","workoutDay":"Day 1","exercises":"1. Squat","sets":"Sets: 4","reps":"Rest: 4","proTip":"70% of max","__v":0}
+{"_id":{"$oid":"59c32d7c025f6e72d388d5ad"},"workoutWeek":"Week 1 ","exercises":"2. Bench Press","sets":"Sets: 3","reps":"Reps: 2","proTip":"80% of max.","__v":0}
+{"_id":{"$oid":"59c32d7c025f6e72d388d5ae"},"workoutWeek":"Week 1 ","exercises":"3. Deadlift","sets":"Sets: 4","reps":"Reps: 3","proTip":"75% of max.","__v":0}
+{"_id":{"$oid":"59c32d7c025f6e72d388d5af"},"workoutWeek":"Week 1 ","exercises":"4. Chinup","sets":"Sets: 3","reps":"Reps: As many as possible.","proTip":"","__v":0}
+{"_id":{"$oid":"59c32d7c025f6e72d388d5b0"},"workoutDay":"Day 2","exercises":"1. Squat","sets":"Sets: 3","reps":"Reps: 1","proTip":"85% of max","__v":0}
+{"_id":{"$oid":"59c32d7c025f6e72d388d5b1"},"exercises":"2. Bench Press","sets":"Sets: 4","reps":"Reps: 4","proTip":"70% of max","__v":0}
+{"_id":{"$oid":"59c32d7c025f6e72d388d5b2"},"exercises":"3. Deadlift","sets":"Sets: 3","reps":"Reps: 2","proTip":"80% of max","__v":0}
+{"_id":{"$oid":"59c32d7c025f6e72d388d5b3"},"exercises":"4. Dumbbell Lateral Raise","sets":"Sets: 4","reps":"Reps: 8, 8, 8, 20-30","proTip":"","__v":0}
+{"_id":{"$oid":"59c32d7c025f6e72d388d5b4"},"workoutDay":"Day 3","exercises":"1. Squat","sets":"Sets: 4","reps":"Reps: 3","proTip":"75% of max","__v":0}
+{"_id":{"$oid":"59c32d7c025f6e72d388d5b5"},"exercises":"2. Bench Press","sets":"Sets: 3","reps":"Reps: 1","proTip":"85% of max","__v":0}
+{"_id":{"$oid":"59c32d7c025f6e72d388d5b6"},"exercises":"3. Deadlift","sets":"Sets: 4","reps":"Reps: 4","proTip":"70% of max","__v":0}
+{"_id":{"$oid":"59c32d7c025f6e72d388d5b7"},"exercises":"4. Weighted Pullup","sets":"Sets: 3","reps":"Reps: 6-8","proTip":"","__v":0}
+{"_id":{"$oid":"59c32d7c025f6e72d388d5b8"},"workoutDay":"Day 4","exercises":"1. Squat","sets":"Sets: 3","reps":"Reps: 2","proTip":"80% of max","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5b9"},"exercises":"2. Bench Press","sets":"Sets: 4","reps":"Reps: 3","proTip":"75% 0f max","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5ba"},"exercises":"3. Deadlift","sets":"Sets: 3","reps":"Reps: 1","proTip":"85% of max","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5bb"},"exercises":"4. Dumbbell Lateral Raise","sets":"Sets: 3","reps":"Reps: 12-15","proTip":"","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5bc"},"workoutWeek":"Week 2","workoutDay":"Day 1","exercises":"1. Squat","sets":"Sets: 5","reps":"Reps: 4","proTip":"70% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5bd"},"workoutWeek":"Week 2","exercises":"2. Bench Press","sets":"Sets: 4","reps":"Reps: 2","proTip":"80% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5be"},"workoutWeek":"Week 2","exercises":"3. Deadlift","sets":"Sets: 5","reps":"Reps: 3","proTip":"75% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5bf"},"workoutWeek":"Week 2","exercises":"4. Chinup","sets":"Sets: 4","reps":"Reps: As many as possible","proTip":"","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5c0"},"workoutDay":"Day 2","exercises":"1. Squat","sets":"Sets: 4","reps":"Reps: 1","proTip":"85% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5c1"},"exercises":"2. Bench Press","sets":"Sets: 5","reps":"Reps: 4","proTip":"70% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5c2"},"exercises":"3. Deadlift","sets":"Sets: 4","reps":"Reps: 2","proTip":"80% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5c3"},"exercises":"4. Lateral Raise","sets":"Sets: 5","reps":"Reps: 8, 8, 8, 8, 20–30","proTip":"","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5c4"},"workoutDay":"Day 3","exercises":"1. Squat","sets":"Sets: 5","reps":"Reps: 3","proTip":"75% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5c5"},"exercises":"2. Bench Press","sets":"Sets: 4","reps":"Reps: 2","proTip":"80% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5c6"},"exercises":"3. Deadlift","sets":"Sets: 5","reps":"Reps: 4","proTip":"70% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5c7"},"exercises":"4. Chinup","sets":"Sets: 4","reps":"Reps: 6-8","proTip":"Perform the chinup as described in Day I, but wear a weighted belt or hold a dumbbell between your feet to add resistance.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5c8"},"workoutDay":"Day 4","exercises":"1. Squat","sets":"Sets: 4","reps":"Reps: 2","proTip":"80% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5c9"},"exercises":"2. Bench Press","sets":"Sets: 5","reps":"Reps: 3","proTip":"80% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5ca"},"exercises":"3. Deadlift","sets":"Sets: 4","reps":"Reps: 1","proTip":"85% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5cb"},"exercises":"4. Lateral Raise","sets":"Sets: 4","reps":"Reps: 12-15","proTip":"","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5cc"},"workoutWeek":"Week 3","workoutDay":"Day 1","exercises":"1. Squat","sets":"Sets: 4","reps":"Reps: 4","proTip":"70% of max","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5cd"},"workoutWeek":"Week 3","exercises":"2. Bench Press","sets":"Sets: 4","reps":"Reps: 3","proTip":"80% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5ce"},"workoutWeek":"Week 3","exercises":"3. Deadlift","sets":"Sets: 5","reps":"Reps: 4","proTip":"80% of max. ","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5cf"},"workoutWeek":"Week 3","exercises":"4. Chinup","sets":"Sets: 5","reps":"Reps: As many as possible.","proTip":"","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5d0"},"workoutDay":"Day 2","exercises":"1. Squat","sets":"Sets: 4","reps":"Reps: 2","proTip":"85% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5d1"},"exercises":"2. Bench Press","sets":"Sets: 5","reps":"Reps: 5","proTip":"70% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5d2"},"exercises":"3. Deadlift","sets":"Sets: 4","reps":"Reps: 3","proTip":"80% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5d3"},"exercises":"4. Lateral Raise","sets":"Sets: 6","reps":"Reps: 8, 8, 8, 8, 8, 20–30","proTip":"","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5d4"},"workoutDay":"Day 3","exercises":"1. Squat","sets":"Sets: 4","reps":"Reps: 3","proTip":"75% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5d5"},"exercises":"2. Bench Press","sets":"Sets: 4","reps":"Reps: 2","proTip":"80% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5d6"},"exercises":"3. Deadlift","sets":"Sets: 5","reps":"Reps: 5","proTip":"70% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5d7"},"exercises":"4. Chinup","sets":"Sets: 5","reps":"Reps: 6-8","proTip":"Perform the chinup as described in Day I, but wear a weighted belt or hold a dumbbell between your feet to add resistance.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5d8"},"workoutDay":"Day 4","exercises":"1. Squat","sets":"Sets: 3","reps":"Reps: 2","proTip":"80% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5d9"},"exercises":"2. Bench Press","sets":"Sets: 5","reps":"Reps: 4","proTip":"75% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5da"},"exercises":"3. Deadlift","sets":"Sets: 4","reps":"Reps: 2","proTip":"85% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5db"},"exercises":"4. Lateral Raise","sets":"Sets: 5","reps":"Reps: 12-15","proTip":"","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5dc"},"workoutWeek":"Week 4","workoutDay":"Day 1","exercises":"1. Squat","sets":"Sets: 5","reps":"Reps: 3","proTip":"70% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5dd"},"workoutWeek":"Week 4","exercises":"2. Bench Press","sets":"Sets: 4","reps":"Reps: 4","proTip":"60% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5de"},"workoutWeek":"Week 4","exercises":"3. Deadlift","sets":"Sets: 4","reps":"Reps: 1","proTip":"60% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5df"},"workoutDay":"Day 2","exercises":"1. Squat","sets":"Reps: 1","reps":"","proTip":"Work up to a new 1-rep max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5e0"},"exercises":"2. Bench Press","sets":"Sets: 3","reps":"Reps: 3","proTip":"60% of max. ","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5e1"},"exercises":"3. Deadlift","sets":"Sets: 3","reps":"Reps: 1","proTip":"70% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5e2"},"workoutDay":"Day 3","exercises":"1. Squat","sets":"Sets: 3","reps":"Reps: 3","proTip":"50% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5e3"},"exercises":"2. Bench Press","sets":"Sets: 4","reps":"Reps: 4","proTip":"60% of max.","__v":0}
+{"_id":{"$oid":"59c32d7d025f6e72d388d5e4"},"workoutDay":"Day 4","exercises":"1. Deadlift","sets":"Reps: 1","reps":"","proTip":"Work up to a new 1-rep max.","__v":0}

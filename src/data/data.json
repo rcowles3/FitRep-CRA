@@ -1,0 +1,62 @@
+{
+    "workout": {
+        "collection": "Back2Basics",
+
+        "weeks": [{
+                "wnum": 1,
+                "wday": [{
+                        "day": 1,
+                        "exercise": ["Squat", "Bench Press", "Dead Lift"],
+                        "weight": [20, 100, 150],
+                        "reps": 10,
+                        "sets": 3,
+                        "completedDay": false
+                    },
+                    {
+                        "day": 2,
+                        "exercise": ["Dumbell Overhead Triceps", "Dumbell Shoulder Press", "Dumbell Curls"],
+                        "weight": [10, 15, 15],
+                        "reps": 10,
+                        "sets": 3,
+                        "completedDay": false
+                    },
+                    {
+                        "day": 3,
+                        "exercise": "Cardio Stair Climber",
+                        "minutes": 30,
+                        "completedDay": false
+                    }
+                ],
+                "completedWeek": false
+            },
+            {
+                "wnum": 2,
+                "wday": [{
+                        "day": 1,
+                        "exercise": ["Dumbell Bench Press", "Chest Flys", "Dumbell extensions"],
+                        "weight": [20, 15, 10],
+                        "reps": 10,
+                        "sets": 3,
+                        "completedDay": false
+                    },
+                    {
+                        "day": 2,
+                        "exercise": ["Dumbell Overhead Triceps", "Dumbell Shoulder Press", "Dumbell Curls"],
+                        "weight": [10, 15, 15],
+                        "reps": 10,
+                        "sets": 3,
+                        "completedDay": false
+                    },
+                    {
+                        "day": 3,
+                        "exercise": "Cardio Treadmill Walking",
+                        "minutes": 30,
+                        "completedDay": false
+                    }
+                ],
+                "completedWeek": false
+            }
+        ],
+        "completedWorkout": false
+    }
+}
