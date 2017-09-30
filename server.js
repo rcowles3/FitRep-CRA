@@ -79,27 +79,21 @@ db.once("open", function () {
 });
 
 //get all data from back to basics in local db
-<<<<<<< HEAD
-app.get("/b2b", function (req, res) {
-  // console.log("what is in my request? ", req);
-  BackToBasics.find({}).sort([
-=======
-app.get("/b2b", function(req, res){
-  console.log("I am in the server route");
-   BackToBasics.find({}).sort([
->>>>>>> aaa90d9e1409c7b9f83c0c4798bc740e9b4b03b4
-    ["_id", "descending"]
-  ]).limit(5).exec(function (err, doc) {
-    if (err) {
-      console.log(err);
-    }
-    else {
-      console.log("I hit my b2b route", doc);
-      res.send(doc);
-    }
-  });
+// app.get("/b2b", function(req, res){
+//   console.log("I am in the server route");
+//    BackToBasics.find({}).sort([
+//     ["_id", "descending"]
+//   ]).limit(5).exec(function (err, doc) {
+//     if (err) {
+//       console.log(err);
+//     }
+//     else {
+//       console.log("I hit my b2b route", doc);
+//       res.send(doc);
+//     }
+//   });
 
-});
+// });
 
 //get all data from back to basics in local db
 app.get("/maxed", function (req, res) {

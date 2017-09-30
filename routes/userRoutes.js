@@ -25,7 +25,7 @@ userRouter.route('/create').post((req, res) => {
     // console.log("RESULT: \n\n", "===".repeat(20), res);
     let reqObj = req.body.CreateUser;
     let user = new CreateUser(reqObj);
-    // console.log("User Obj: \n", "===".repeat(20), "\n\n", reqObj, "\n\n");
+    console.log("User Obj: \n", "===".repeat(20), "\n\n", user, "\n\n");
     user.save()
         .then(user => {
             res.status(200);
@@ -44,7 +44,8 @@ userRouter.route("/authenticate").post((req, res) => {
     auth = (err, info, doc) => {
         if (err) throw err;
         console.log("\n\n\nReturned data from DB", info);  
-        res.json(info); // send auth user to be grabbed by json
+        // res.json(info);
+        res.send(info);
     }
 
     CreateUser.

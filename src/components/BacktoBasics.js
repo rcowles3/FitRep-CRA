@@ -21,7 +21,9 @@ export default class BacktoBasics extends React.Component{
         super(props);
         //this.onClick = this.onClick.bind(this);
         // this.onReset = this.onReset.bind(this);
-        this.state = {day:null, week: null, exercise: null};
+        this.state = { day: null, week: null, exercise: null, fName: '' };
+        
+        this.componentDidMount = this.componentDidMount.bind(this);
     }
     setWeek(wnum){
         this.setState({week:data.workout.weeks[wnum-1]});
@@ -34,6 +36,11 @@ export default class BacktoBasics extends React.Component{
        this.setState({day:this.state.week.wday[wday-1]});
        
    }
+   
+   componentDidMount() { 
+       console.log("MOUNTED:\n\n", this.props.value);
+    //    console.log(this.props);
+   } 
 
    getData(){
     console.log("I am in the get exercises call")

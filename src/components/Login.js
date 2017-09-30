@@ -12,6 +12,7 @@ import React, { Component } from 'react';
 import logo from '../imgs/fitRepLogo.png';
 import helpers from '../utils/helpers';
 import axios from 'axios';
+import BacktoBasics from './BacktoBasics';
 
 
 // import passport from ('passport');
@@ -23,9 +24,10 @@ class Login extends Component {
         super(props);
         this.state = {
             username: '',
-            password: ''
+            password: '',
+            fName: ''
         };
-        this.userData = new helpers();
+        // this.userData = new helpers();
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -47,34 +49,22 @@ class Login extends Component {
 
         // let first_name = this.state.firstName;
         event.preventDefault();
-        this.userData.authData(loginInfo);
-        // console.log("Account Login Successful!");
-
-        // let user_name =this.state.username;
-        // let pass_word = this.state.password;
-
-        // console.log(loginInfo);
-
-        // console.log('username/password:', username, password);
-        // console.log('password', password);
-        // this.setState({ fireRedirect: true })
-
-        // const click = this.props.onClick;
-        // axios.post("http://localhost:4200/users/login", { username: this.state.username, password: this.state.password }).then((response) => {
-        //     click(true);
-        //     // console.log('post login');
-
-        //     // click(true);
-        //     axios.get("/contests/judge").then(function (response) {
-        //         // click(true);
-        //         // console.log('judge username:', response.data[0].username);
-        //         if (username === response.data[0].username) {
-        //             console.log("profile redirect");
-        //             // browserHistory.push('/dashboard');
-        //         }
-        //     });
-
-        // });
+        // this.userData.authData(loginInfo);
+        axios.post('http://localhost:4200/users/authenticate', {
+            loginInfo: loginInfo
+        })
+            .then((res) => {
+                // this.setState({ loginInfo: res.data })
+                console.log(res.data);
+                this.setState(
+                    {
+                        'fName': res.data.first_name
+                    }
+                )
+                console.log(this.state.fName);
+                
+            })
+            .catch(err => console.log(err));
 
     }
 
@@ -85,6 +75,7 @@ class Login extends Component {
                     <input className="form-control mr-sm-2" type="text" id="username" value={this.state.username} onChange={this.handleChange} name="user_name" placeholder="Username" />
                     <input className="form-control mr-sm-2" type="text" id="password" value={this.state.password} onChange={this.handleChange} name="password" placeholder="Password" />
                     <button className="btn btn-primary my-2 my-sm-0" type="submit">Login</button>
+                    {this.state.fName ? <BacktoBasics value={this.state.fName} />: null}
                 </form>
             </div>
         )
