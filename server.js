@@ -37,6 +37,26 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
+//allow for client to make calls to the server
+
+app.use(function (req, res, next) {
+  
+      // Website you wish to allow to connect
+      res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  
+      // Request methods you wish to allow
+      res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  
+      // Request headers you wish to allow
+      res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  
+      // Set to true if you need the website to include cookies in the requests sent
+      // to the API (e.g. in case you use sessions)
+      res.setHeader('Access-Control-Allow-Credentials', true);
+  
+      // Pass to next layer of middleware
+      next();
+  });
 //Database configuration with mongoose
 var localDeploy = "mongodb://localhost:27017/FitRep";
 var herokuDeploy = 'mongodb://heroku_qls9xw3z:9kclrucuf2af6stvk0engod2s0@ds157584.mlab.com:57584/heroku_qls9xw3z';
@@ -59,15 +79,22 @@ db.once("open", function () {
 });
 
 //get all data from back to basics in local db
+<<<<<<< HEAD
 app.get("/b2b", function (req, res) {
   // console.log("what is in my request? ", req);
   BackToBasics.find({}).sort([
+=======
+app.get("/b2b", function(req, res){
+  console.log("I am in the server route");
+   BackToBasics.find({}).sort([
+>>>>>>> aaa90d9e1409c7b9f83c0c4798bc740e9b4b03b4
     ["_id", "descending"]
   ]).limit(5).exec(function (err, doc) {
     if (err) {
       console.log(err);
     }
     else {
+      console.log("I hit my b2b route", doc);
       res.send(doc);
     }
   });

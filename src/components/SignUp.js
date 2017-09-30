@@ -11,7 +11,6 @@ class SignUp extends Component {
             firstName: '',
             lastName: '',
             email: '',
-            heightFt: '',
             heightIn: '',
             weight: '',
             age: '',
@@ -37,7 +36,6 @@ class SignUp extends Component {
             first_name: this.state.firstName,
             last_name: this.state.lastName,
             uEmail: this.state.email,
-            height_ft: this.state.heightFt,
             height_in: this.state.heightIn,
             uWeight: this.state.weight,
             uAge: this.state.age,
@@ -92,11 +90,7 @@ class SignUp extends Component {
               <input type="text" id="email" value={this.state.email} onChange={this.handleChange} className="form-control" name="uEmail" />
                     </label><br />
                     <label>
-                        Height (ft):
-              <input type="text" id="heightFt" value={this.state.heightFt} onChange={this.handleChange} className="form-control" name="height_ft" />
-                    </label><br />
-                    <label>
-                        (in):
+                      Height (in):
               <input type="text" id="heightIn" value={this.state.heightIn} onChange={this.handleChange} className="form-control" name="height_in" />
                     </label><br />
                     <label>

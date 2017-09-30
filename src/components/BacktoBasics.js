@@ -9,6 +9,8 @@ import logo from '../imgs/fitRepLogo.png';
 //import temporary data object
 import data from '../data/data.json';
 
+//import helpers from '../utils/helpers';
+import axios from 'axios';
 
 
 //import BSTable from './components/bstrapTable';
@@ -33,6 +35,17 @@ export default class BacktoBasics extends React.Component{
        
    }
 
+   getData(){
+    console.log("I am in the get exercises call")
+     axios.get('http://localhost:4200/b2b').then(res => {
+         console.log("this is the response from the call!", res.data);
+         const exercises = res.data[1];
+          console.log(exercises);
+         // this.setState({ exercises });
+       });
+   
+}
+
   render(){
       console.log("this is my data I am importing", data);
         return (
@@ -41,6 +54,7 @@ export default class BacktoBasics extends React.Component{
                     <img src={logo} className="App-logo" alt="logo" />                    
                 </div>
                 <h1 className="text-center">{data.workout.collection}</h1>
+                <BsButton onClick={this.getData}>Get Exercises</BsButton>
                 <ButtonToolbar>
                      {data.workout.weeks.map((week) => {
                         console.log('week',week);

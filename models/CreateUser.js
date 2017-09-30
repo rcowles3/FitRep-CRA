@@ -16,10 +16,7 @@ const CreateUser = new Schema({
         type: String
         // required: true
     }, 
-    height_ft: {
-        type: String
-        // required: true
-    },
+
     height_in: {
         type: String
         // required: true
