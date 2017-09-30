@@ -22,8 +22,10 @@
                     },
                     {
                         "day": 3,
-                        "exercise": "Cardio Stair Climber",
-                        "minutes": 30,
+                        "exercise": ["Chinup", "Side Lateral Raise", "Seated Dumbell Press"],
+                        "weight": [0, 15, 15],
+                        "reps": 10,
+                        "sets": 3,
                         "completedDay": false
                     }
                 ],
@@ -33,8 +35,37 @@
                 "wnum": 2,
                 "wday": [{
                         "day": 1,
-                        "exercise": ["Dumbell Bench Press", "Chest Flys", "Dumbell extensions"],
-                        "weight": [20, 15, 10],
+                        "exercise": ["Lying Triceps Press", "Chest Flys", "Dumbell extensions"],
+                        "weight": [20, 25, 10],
+                        "reps": 10,
+                        "sets": 3,
+                        "completedDay": false
+                    },
+                    {
+                        "day": 2,
+                        "exercise": ["Bench Dips", "Incline Dumbell Flys", "Barbell Bench Press"],
+                        "weight": [0, 15, 20],
+                        "reps": 10,
+                        "sets": 3,
+                        "completedDay": false
+                    },
+                    {
+                        "day": 3,
+                        "exercise": ["Chinup", "Side Lateral Raise", "Seated Dumbell Press"],
+                        "weight": [0, 15, 15],
+                        "reps": 10,
+                        "sets": 3,
+                        "completedDay": false
+                    }
+                ],
+                "completedWeek": false
+            },
+            {
+                "wnum": 3,
+                "wday": [{
+                        "day": 1,
+                        "exercise": ["Squat", "Bench Press", "Dead Lift"],
+                        "weight": [20, 100, 150],
                         "reps": 10,
                         "sets": 3,
                         "completedDay": false
@@ -49,8 +80,39 @@
                     },
                     {
                         "day": 3,
-                        "exercise": "Cardio Treadmill Walking",
-                        "minutes": 30,
+                        "exercise": ["Chinup", "Side Lateral Raise", "Seated Dumbell Press"],
+                        "weight": [0, 15, 15],
+                        "reps": 10,
+                        "sets": 3,
+                        "completedDay": false
+                    }
+                ],
+                "completedWeek": false
+            },
+            {
+                "wnum": 4,
+                "wday": [{
+                        "day": 1,
+                        "exercise": ["Lying Triceps Press", "Chest Flys", "Dumbell extensions"],
+                        "weight": [20, 25, 10],
+                        "reps": 10,
+                        "sets": 3,
+                        "completedDay": false
+                    },
+                    {
+                        "day": 2,
+                        "exercise": ["Bench Dips", "Incline Dumbell Flys", "Barbell Bench Press"],
+                        "weight": [0, 15, 20],
+                        "reps": 10,
+                        "sets": 3,
+                        "completedDay": false
+                    },
+                    {
+                        "day": 3,
+                        "exercise": ["Chinup", "Side Lateral Raise", "Seated Dumbell Press"],
+                        "weight": [0, 15, 15],
+                        "reps": 10,
+                        "sets": 3,
                         "completedDay": false
                     }
                 ],

@@ -79,9 +79,9 @@ db.once("open", function(){
 //get all data from back to basics in local db
 app.get("/b2b", function(req, res){
   console.log("I am in the server route");
-   BackToBasics.find({}).sort([
+   BackToBasics.find({"workoutWeek":"Week 1 "}).sort([
     ["_id", "descending"]
-  ]).limit(5).exec(function(err, doc) {
+  ]).limit(10).exec(function(err, doc) {
     if (err) {
       console.log(err);
     }
