@@ -54,6 +54,7 @@ export default class BacktoBasics extends React.Component{
                     <img src={logo} className="App-logo" alt="logo" />                    
                 </div>
                 <h1 className="text-center">{data.workout.collection}</h1>
+                <BsButton onClick={this.getData}>Get Exercises</BsButton>
                 <ButtonToolbar>
                      {data.workout.weeks.map((week) => {
                         console.log('week',week);
