@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import HeaderImg from './components/HeaderImg';
 import CardDeck from './components/CardDeck';
 import GetStarted from './components/GetStarted';
+import BacktoBasics from './components/BacktoBasics';
 import Footer from './components/Footer';
 // import ContactForm from './components/ContactForm';
 
@@ -21,6 +22,7 @@ class App extends Component {
         <HeaderImg />
         <CardDeck />
         <GetStarted />
+        
         {/* <ContactForm /> */}
         <Footer />
       </div>

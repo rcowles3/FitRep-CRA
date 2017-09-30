@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import workoutIcon from '../imgs/workoutIcon.png';
 import trackingIcon from '../imgs/trackingIcon.png';
 import scaleIcon from '../imgs/scaleIcon.png';
+//import BackToBasics from '../components/BacktoBasics';
 
 
 class CardDeck extends Component {
@@ -21,7 +22,8 @@ class CardDeck extends Component {
                     <div className="card-body">
                         <h4 className="card-title">Choose Your Workout</h4>
                         <p className="card-text">Whether you are just getting started on your fitness journey, or looking for a challenge, choose one that fits your goals.</p>
-                    </div>
+                        <a className="btn btn-primary my-2 my-sm-0" href="/back2basics">Get Workout</a>
+                        </div>
                 </div>
                 <div className="card">
                     <img className="card-img-top mx-auto" src={trackingIcon} alt="Card image cap" />
