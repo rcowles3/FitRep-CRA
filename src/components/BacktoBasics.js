@@ -104,6 +104,7 @@ export default class BacktoBasics extends React.Component {
                     <a href="/">
                         <img src={logo} className="App-logo" alt="logo" /> </a>
                 </div>
+                <h1>Welcome Back {this.props.value}!</h1>
                 <h1 className="text-center">{data.workout.collection}</h1>
                 {/* {this.state.items ? <BsButton bsStyle="success" onClick={this.renderExercises}>{this.state.items[0].workoutWeek}</BsButton>:null}*/}
                 {/*<BsButton onClick={this.getData}>Get Exercises</BsButton>*/}

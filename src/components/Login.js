@@ -62,7 +62,7 @@ class Login extends Component {
                     }
                 )
                 console.log(this.state.fName);
-                
+                this.history.pushState(null, '/back2basics');
             })
             .catch(err => console.log(err));
 
@@ -73,7 +73,7 @@ class Login extends Component {
             <div>
                 <form className="form-inline my-2 my-lg-0" onSubmit={this.handleSubmit}>
                     <input className="form-control mr-sm-2" type="text" id="username" value={this.state.username} onChange={this.handleChange} name="user_name" placeholder="Username" />
-                    <input className="form-control mr-sm-2" type="text" id="password" value={this.state.password} onChange={this.handleChange} name="password" placeholder="Password" />
+                    <input className="form-control mr-sm-2" type="password" id="password" value={this.state.password} onChange={this.handleChange} name="password" placeholder="Password" />
                     <button className="btn btn-primary my-2 my-sm-0" type="submit">Login</button>
                     {this.state.fName ? <BacktoBasics value={this.state.fName} />: null}
                 </form>

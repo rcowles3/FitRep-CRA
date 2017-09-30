@@ -12,6 +12,8 @@ import TableRow from './components/TableRow';
 import SignUp from './components/SignUp'
 import BacktoBasics from './components/BacktoBasics';
 import registerServiceWorker from './registerServiceWorker';
+import SignUpModal from './components/modals/SignUpModal';
+import LoginModal from './components/modals/LoginModal';
 
 ReactDOM.render(<Router>
     <div>
@@ -19,8 +21,8 @@ ReactDOM.render(<Router>
         {/* <Route path='/add-item' component={AddItem} />
         <Route path='/index' component={IndexItem} />
         <Route path='/edit/:id' component={EditItem} /> */}
-        <Route path='/create-account' component={SignUp} />
-        <Route path='/login' component={Login} />
+        {/* <Route path='/create-account' component={SignUp} /> */}
+        {/* <Route path='/login' component={Login} /> */}
         <Route path='/table' component={TableRow} />
         <Route path='/back2basics' component={BacktoBasics} />
     </div>
