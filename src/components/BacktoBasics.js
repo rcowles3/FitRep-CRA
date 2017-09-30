@@ -9,6 +9,8 @@ import logo from '../imgs/fitRepLogo.png';
 //import temporary data object
 import data from '../data/data.json';
 
+//import helpers from '../utils/helpers';
+import axios from 'axios';
 
 
 //import BSTable from './components/bstrapTable';
@@ -32,6 +34,17 @@ export default class BacktoBasics extends React.Component{
        this.setState({day:this.state.week.wday[wday-1]});
        
    }
+
+   getData(){
+    console.log("I am in the get exercises call")
+     axios.get('http://localhost:4200/b2b').then(res => {
+         console.log("this is the response from the call!", res.data);
+         const exercises = res.data[1];
+          console.log(exercises);
+         // this.setState({ exercises });
+       });
+   
+}
 
   render(){
       console.log("this is my data I am importing", data);
