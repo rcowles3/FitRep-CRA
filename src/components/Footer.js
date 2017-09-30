@@ -33,8 +33,8 @@ class Footer extends Component {
                         <br />
                         <div>
                             <h5 className="card-title">API</h5>
-                            <a className="nav-link" href="/api/workout-data/back-to-basics">Back To Basics</a>
-                            <a className="nav-link" href="/api/workout-data/maxed-out-muscle">Maxed Out Muscle</a>
+                            <a className="nav-link" href="http://localhost:4200/api/workout-data/back-to-basics">Back To Basics</a>
+                            <a className="nav-link" href="http://localhost:4200/api/workout-data/maxed-out-muscle">Maxed Out Muscle</a>
                         </div>
                     </div>
                 </div>
