@@ -1,28 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './index.css';
-import App from './App';
-// import AddItem from './components/AddItem';
-// import IndexItem from './components/IndexItem';
-// import EditItem from './components/EditItem';
-// import Create from './components/Create';
-import Login from './components/Login';
-import TableRow from './components/TableRow';
-import SignUp from './components/SignUp'
-import BacktoBasics from './components/BacktoBasics';
-import registerServiceWorker from './registerServiceWorker';
+require('bootstrap/dist/css/bootstrap.min.css')
+require('bootstrap/dist/css/bootstrap-theme.min.css')
+require('./style.css')
 
-ReactDOM.render(<Router>
-    <div>
-        <Route exact path='/' component={App} />
-        {/* <Route path='/add-item' component={AddItem} />
-        <Route path='/index' component={IndexItem} />
-        <Route path='/edit/:id' component={EditItem} /> */}
-        <Route path='/create-account' component={SignUp} />
-        <Route path='/login' component={Login} />
-        <Route path='/table' component={TableRow} />
-        <Route path='/back2basics' component={BacktoBasics} />
-    </div>
-</Router>, document.getElementById('root'));
-registerServiceWorker();
+require('es6-promise').polyfill()
+require('whatwg-fetch')
+
+import React from 'react'
+import {render} from 'react-dom'
+
+import App from './App'
+
+let zipCodeMatch = /zipCode=(\d{5})/.exec(window.location.href)
+let zipCode = (zipCodeMatch != null ? zipCodeMatch[1] : '')
+
+render(<App zipCode={zipCode}/>, document.querySelector('#app'))
